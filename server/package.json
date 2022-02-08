@@ -1,0 +1,40 @@
+{
+    "name": "node-cinema",
+    "version": "1.0.0",
+    "description": "Server for \"Cinema empire\"",
+    "main": "index.js",
+    "scripts": {
+        "start": "node dist/index.js",
+        "build": "tsc --noImplicitAny false",
+        "watch": "tsc -w",
+        "dev": "tsc && concurrently \"tsc -w\" \"nodemon dist/index.js\""
+    },
+    "author": "Dima Didkivskiy",
+    "license": "ISC",
+    "dependencies": {
+        "@types/multer": "^1.4.7",
+        "aws-sdk": "^2.1060.0",
+        "chalk": "^5.0.0",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.2",
+        "joi": "^17.5.0",
+        "jsonwebtoken": "^8.5.1",
+        "multer": "^1.4.4",
+        "pg": "^8.7.1",
+        "ts-node": "^10.4.0",
+        "typeorm": "^0.2.41",
+        "typescript": "^4.5.4"
+    },
+    "devDependencies": {
+        "@types/cookie-parser": "^1.4.2",
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/jsonwebtoken": "^8.5.8",
+        "@types/node": "^17.0.7",
+        "@types/uuid": "^8.3.4",
+        "concurrently": "^7.0.0",
+        "nodemon": "^2.0.15"
+    }
+}
